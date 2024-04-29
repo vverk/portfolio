@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0 3%;
+    font-family: "Mulish", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.2em;
+    background: linear-gradient(180deg, #392657 0%, rgba(57, 38, 87, 0.8) 100%);
+    color: #ffffff;
+  }
+ 
+.header {
+  display: flex;
+  padding: 20px 5%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.main-nav .main-nav__list , .socials__list{
+  list-style-type:none;
+  display:flex;
+  gap: 20px;
+}
+
+.list-item__link {
+  text-decoration:none;
+  color:#ffffff;
+}
+
+.intro-img__avatar {
+  background-image: url("img/avatar.jpg");
+  width:400px;
+  height:400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius:70%;
+}
