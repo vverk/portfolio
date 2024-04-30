@@ -1,13 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono&display=swap');
 body {
     margin: 0;
     padding: 0 3%;
-    font-family: "Mulish", sans-serif;
+    font-family: "Roboto Mono", sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
     letter-spacing: 0.2em;
-    background: linear-gradient(180deg, #392657 0%, rgba(57, 38, 87, 0.8) 100%);
-    color: #ffffff;
+    background: #F0F0F0
   }
  
 .header {
@@ -17,22 +17,226 @@ body {
   flex-wrap: wrap;
 }
 
-.main-nav .main-nav__list , .socials__list{
+.main-nav .main-nav__list , .socials__list , .footer-list{
   list-style-type:none;
   display:flex;
-  gap: 20px;
+  gap: 60px;
+}
+.logo__title {
+  color:#A1A1A1;
 }
 
-.list-item__link {
+.list-item__link , .footer-list{
   text-decoration:none;
-  color:#ffffff;
+  color:#D7384A;
+  position: relative;
+  font-size: 23px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.list-item__link::after , .footer-list::after{
+  position: absolute;
+  transition: 0.2s;
+  content: "";
+  border-radius: 10px;
+  width: 55%;
+  height: 3px;
+  bottom: -12px;
+  background: #861421;
+  box-shadow: 0px 4px 4px rgba(163, 39, 39, 0.25);
 }
 
+.list-item__link:hover::after {
+  width: 100%;
+}
 .intro-img__avatar {
   background-image: url("img/avatar.jpg");
-  width:400px;
-  height:400px;
+  width:470px;
+  height:500px;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius:70%;
+  position: 40px 40px;
+}
+
+.welcome {
+  display:flex;
+  justify-content: space-between;
+  padding: 15% 10%
+}
+
+.intro-text__text {
+  color: #A1A1A1;
+  font-size: 20px;
+}
+
+.intro-text__header {
+  color: #D7384A;
+  font-size: 60px;
+}
+
+.intro-text__button {
+  background-color: #D7384A;
+  color: #F0F0F0;
+  font-size: 21px;
+  padding: 15px 30px;
+  border-radius: 10px;
+  margin: 5px 5px;
+  border: 1px solid #c9c8c8;
+}
+
+.intro-text__button:hover {
+  background-color: #dddcdc;
+  color: #D7384A;
+}
+
+.about {
+  padding: 0% 5% 15% 5%;
+}
+
+.above-text__header {
+  color: #D7384A;
+  font-size: 70px;
+}
+
+.above-text__text {
+  color: #D7384A;
+  font-size: 30px;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.about-list__element {
+  color:#D7384A;
+  font-size: 27px;
+}
+
+.first-text {
+  color: #D7384A;
+  font-size: 20px;
+}
+
+.second-text {
+  color: #D7384A;
+  font-size: 20px;
+}
+
+.third-text {
+  color: #D7384A;
+  font-size: 20px;
+}
+
+.above-work__header {
+  color: #D7384A;
+  font-size: 70px;
+}
+
+.above-work__text {
+  color: #D7384A;
+  font-size: 30px;
+}
+
+.work__left-img {
+  background-image: url("img/praca1.jpg");
+  width:500px;
+  height:400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.work__left-above {
+  color: #D7384A;
+  font-size: 25px;
+}
+
+.work__left-text {
+  color: #D7384A;
+  font-size: 17px;
+}
+
+.work__right-img {
+  background-image: url("img/praca2.jpg");
+  width:500px;
+  height:400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.work__right-above {
+  color: #D7384A;
+  font-size: 25px;
+}
+
+.work__right-text {
+  color: #D7384A;
+  font-size: 17px;
+}
+
+.work {
+  padding: 5% 5%;
+}
+
+.works {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 5% 0%;
+}
+
+.contact {
+  padding: 2% 5% 5% 5%;
+}
+
+.contact-header {
+  color: #D7384A;
+  font-size: 70px;
+}
+
+.contact-text {
+  color: #D7384A;
+  font-size: 30px;
+}
+
+.contact__com {
+  padding: 30px 20px 10px 20px;
+}
+
+.contact__button {
+  background-color: #D7384A;
+  color: #F0F0F0;
+  font-size: 21px;
+  padding: 15px 30px;
+  border-radius: 10px;
+  margin: 5px 5px;
+  border: 1px solid #c9c8c8;
+}
+
+.contact__button:hover {
+  background-color: #dddcdc;
+  color: #D7384A;
+}
+
+.footer-list {
+  display: flex;
+  padding: 20px 5%;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+}
+
+.copyright-text {
+  color: #A1A1A1;
+  font-size: 13px;
 }
